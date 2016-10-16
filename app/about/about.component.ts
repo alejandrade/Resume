@@ -1,4 +1,4 @@
-import { Component, Input ,OnInit} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Contact } from '../data/contact';
 import { TitleService } from '../data/title.service';
 
@@ -9,12 +9,11 @@ import { TitleService } from '../data/title.service';
   templateUrl: 'about.component.html'
 
 })
-export class AboutComponent implements OnInit  {
+export class AboutComponent  {
 	  contact: Contact = new Contact();
  	//  
 	pageName: string = "About";
 
-	 ngOnInit() { 
-	  }
+
 
 }

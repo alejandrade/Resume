@@ -5,6 +5,10 @@ body {
   background-color: #2B2B2B !important;
   color: white !important;
   font-size: 2em !important;
+  //min-height: 98%!important
+  //max-height: 90%;
+  //height: 90%;
+
 }
 
 .myName{
@@ -36,18 +40,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', end
 }
 
 .oneTab{
-	margin-left: 2em;
+	margin-left: 1em;
 }
 
-
+.twoTab{
+  margin-left: 1em;
+}
 .toolBar{
 	background-color: #EEEEE6;
 }
 
 .code{
 	padding: 1em;
+    height: 70%;
+    min-height: 100px;
+    max-height: 690px !important;
+    overflow-y: scroll;
+}
+.reservedWords{
+
+color:#89D9D0;
 }
 
+
+.function{
+  padding-top: 1em;
+}
 
 nav a {
   padding: 5px 10px;

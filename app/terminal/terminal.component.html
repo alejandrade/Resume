@@ -1,5 +1,35 @@
-<div id="footer">
-	
 
-	<span editable></span>
+
+
+<div id="footer">
+	<div class='utilBar'>
+	<button (click)="showModal('Cv')" class='executeButton'>exec about</button>
+	</div>
+	<div [innerHtml]="terminalData.terminal" #terminalContainer id='terminalText'>
+	
+	</div>
+		<span id='inputField'>
+	{{terminalData.inputString}}<span class="blink_me">|</span>
+	</span>
 </div>
+
+
+<!-- The Modal -->
+<div #myModal id="myModal" class="modal">
+
+
+
+  <div class="modal-content">
+    <!-- Modal content -->
+    <div class='windowBar'>
+  	{{modalTitle}}
+    <span (click)="closeModal()" class="close">x</span>
+  </div>
+  	<div class='modalBody'>
+    <span [innerHtml]="modalBody" ></span>
+    <button (click)="closeModal()" class="okButton">ok</button>
+    </div>
+  </div>
+
+</div>
+

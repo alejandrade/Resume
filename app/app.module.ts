@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TitleService } from './data/title.service';
 import { TerminalComponent } from './terminal/terminal.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,

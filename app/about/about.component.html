@@ -2,7 +2,11 @@
 
      <span class='importantKeyWord'>
      import 
-     </span> com.gigamog.cv.*;<br><br>
+     </span> com.gigamog.cv.CvBuilder;<br>
+     <span class='importantKeyWord'>
+     import 
+     </span> com.gigamog.cv.Cv;<br>
+     <br>
   <div>
   <span class='importantKeyWord'>public  class </span>
   <span class='parentClass' >{{pageName}}</span> {{"{"}}
@@ -38,8 +42,45 @@
    yearsExperience 
    </span>= {{contact.yearsExperience}};
   </div>
+  <div class='function'>
+    <span class='importantKeyWord '>
+    public String </span><span class='userVariables'>printCv</span>( <span class='importantKeyWord '>String </span><span class='userVariables'>date</span>) 
+    {{"{"}}
+    <div class='twoTab'>
+       <span class='importantKeyWord '>CvBuilder</span> <span class='userVariables'>cvBuil </span>=  <span class='reservedWords '>new</span> <span class='importantKeyWord '>CvBuilder</span>(<span class='userVariables'>date</span>); <br>
+
+      <span class='userVariables'>cvBuil.addCurrentGoals</span>(
+      <span class='reservedWords '>this</span>.<span class='userVariables'>currentGoal
+     </span>);
+     <br>
+      <span class='userVariables'>cvBuil.addCurrentTitle</span>(
+      <span class='reservedWords '>this</span>.<span class='userVariables'>currentTitle
+     </span>);
+     <br>
+      <span class='userVariables'>cvBuil.setParagraphNumber</span>(3);
+     <br>
+      <span class='importantKeyWord'>Cv </span> <span class='userVariables' >cv</span> = <span class='userVariables'>cvBuil.generateCv</span>();<br>
+      <span class='reservedWords' >return </span><span class='userVariables'>cv.toString</span>();
+
+    </div>
+    {{"}"}}
+</div>
+  <div class='function'>
+    <span class='importantKeyWord '>
+    public static void  </span><span class='userVariables'>main</span>( <span class='importantKeyWord '>String[] </span><span class='userVariables'>args</span>) 
+    {{"{"}}
+    <div class='twoTab'>
+       <span class='importantKeyWord '>About</span> <span class='userVariables'>about </span>=  <span class='reservedWords '>new</span> <span class='importantKeyWord '>About</span>(<span class='userVariables'></span>); <br>
+      <span class='userVariables'>about.printCv</span>("10/16/2016");
+    
+
+    </div>
+    {{"}"}}
+</div>
 
 </div>
+
+
 
   <div>{{"}"}}</div>
   </div>
