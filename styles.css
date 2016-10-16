@@ -1,0 +1,71 @@
+/* Master Styles */
+
+body {
+  margin: 4em;
+  background-color: #2B2B2B !important;
+  color: white !important;
+  font-size: 2em !important;
+}
+
+.myName{
+}
+.titleBar{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
+background: #258dc8; /* Old browsers */
+background: -moz-linear-gradient(top,  #258dc8 0%, #258dc8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #258dc8 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #258dc8 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+
+
+}
+.codeTabs{
+
+}
+
+.parentClass {
+	color: #BFE800;
+}
+
+.importantKeyWord {
+	color: #B43200;
+}
+
+.userVariables {
+	color: #AAA330;
+}
+
+.oneTab{
+	margin-left: 2em;
+}
+
+
+.toolBar{
+	background-color: #EEEEE6;
+}
+
+.code{
+	padding: 1em;
+}
+
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+  background-color: #2B2B2B;
+}
