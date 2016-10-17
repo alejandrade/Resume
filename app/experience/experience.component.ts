@@ -6,5 +6,13 @@ import { Component, Input } from '@angular/core';
   templateUrl: 'experience.component.html'
 
 })
+
+
+
+
 export class ExperienceComponent {
-}
+	pageName: string = "Experience";
+} 
+
+
+

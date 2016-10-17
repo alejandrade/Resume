@@ -1,8 +1,9 @@
 #footer {
-    position: fixed;
-    bottom: 0;
+    //position: fixed;
+   // bottom: 0;
     width: 100%;
-   
+    height: 20%;
+    max-height: 
 }
 
 .blink_me {
@@ -18,13 +19,17 @@
 	min-height: 20px;
 }
 
+
 #terminalText{
 	overflow-y: scroll;
-	max-height: 180px !important;
-	min-height: 180px;
+	//max-height: 180px !important;
+	//min-height: 180px;
+    height: 78%;
+    
 	background:#999;
 	padding-bottom: 30px;
 	word-wrap: break-word;
+
 }
 
 /* The Modal (background) */
@@ -79,14 +84,15 @@
 }
 
 .utilBar{
-    position: relative;;
     color: black;
     background-color: #EEEEE6;
+    margin:auto;
+ // display:block;
 }
 
 .windowBar{
-position: relative;;
-color: white;
+//position: relative;;
+//color: white;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
 background: #258dc8; /* Old browsers */
 background: -moz-linear-gradient(top,  #258dc8 0%, #258dc8 100%); /* FF3.6-15 */

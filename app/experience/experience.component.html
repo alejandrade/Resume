@@ -1,0 +1,77 @@
+    <div class='code'>
+
+     <span class='importantKeyWord'>
+     import 
+     </span> com.gigamog.ProjectFactory;<br>
+     <span class='importantKeyWord'>
+     import 
+     </span> com.gigamog.Tabler;<br>
+     <br>
+  <div>
+    <span class='importantKeyWord'>public  class </span>
+    <span class='parentClass' >{{pageName}}</span> {{"{"}}
+  </div>
+  
+<div class='oneTab'>
+  <span><span class='importantKeyWord '>
+  private Project[]</span> 
+  <span class='userVariables'>
+  projects
+  </span> = <span class='reservedWords '>new</span> <span class='importantKeyWord '>
+  Project</span>[3](); 
+  </span>
+<br><br>
+<span class='importantKeyWord '>
+  public void </span> <span class='userVariables'>populateProjectArray</span>(){{"{"}}
+  <div class='oneTab'>
+  <span class='userVariables'>
+  projects[0]
+  </span> = <span class='importantKeyWord '>ProjectFactory.buildProject</span>("FIU");
+  <br>
+  <span class='userVariables'>
+  projects[1]
+  </span> = <span class='importantKeyWord '>ProjectFactory.buildProject</span>("Grazianos");
+  <br>
+  <span class='userVariables'>
+  projects[2]
+  </span> = <span class='importantKeyWord '>ProjectFactory.buildProject</span>("AviorSciences");
+  </div>
+  {{"}"}}
+
+    <div class='function'>
+    <span class='importantKeyWord '>
+    public static void  </span><span class='userVariables'>main</span>( <span class='importantKeyWord '>String[] </span><span class='userVariables'>args</span>) 
+    {{"{"}}
+    <div class='oneTab'>
+       <span class='importantKeyWord '>Tabler</span> <span class='userVariables'>table </span>=  <span class='reservedWords '>new</span> <span class='importantKeyWord '>Tabler</span>(<span class='userVariables'></span>);
+       <br>
+       <br>
+       <span class='userVariables'>table.addHeaders
+       </span>
+       ("Year","Position","Description");
+       <br>
+       <br>
+       <span class='reservedWords'>for</span>(<span class='reservedWords'>int</span> <span class='userVariables'>i</span>=
+       <span class='userVariables'>0</span>; <span class='userVariables'>i</span> < <span class='userVariables'>projects.length</span>; <span class='userVariables'>i</span>++){{"{"}}
+       <div class='oneTab'>
+      <span class='userVariables'> table.addRow
+      </span>
+      (<span class='userVariables'>projects[i].year</span>, <span class='userVariables'>projects[i].position</span>, <span class='userVariables'>project[i].description</span>);
+       </div>
+       {{"}"}}<br>
+
+            <span class='reservedWords' >new </span><span class='importantKeyWord '> Modal</span>(<span class='userVariables'>table.generateTable</span>("10/16/2016")).show();
+    
+
+    </div>
+    {{"}"}}
+</div>
+
+</div>
+
+
+
+  <div>{{"}"}}</div>
+  </div>
+
+

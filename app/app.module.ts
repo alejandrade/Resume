@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TitleService } from './data/title.service';
 import { TerminalComponent } from './terminal/terminal.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TerminalComponent } from './terminal/terminal.component';
     AppComponent,
     TerminalComponent,
     ExperienceComponent,
-    AboutComponent
+    AboutComponent,
+    PortfolioComponent
     ],
   providers: [TitleService],
   bootstrap: [ AppComponent ]

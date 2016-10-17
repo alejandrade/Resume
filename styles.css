@@ -5,15 +5,29 @@ body {
   background-color: #2B2B2B !important;
   color: white !important;
   font-size: 2em !important;
-  //min-height: 98%!important
-  //max-height: 90%;
-  //height: 90%;
-
+  max-height: 800px;
 }
 
 .myName{
 }
+
+.topPortion{
+  //position: fixed;
+ // top: 0;
+  width: 100%;
+}
+
+.middlePortion{
+  //position: fixed;
+  //top:80;
+  overflow-y: scroll;
+ // max-height: 625px;
+  //display: block;;
+
+}
+
 .titleBar{
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
 background: #258dc8; /* Old browsers */
 background: -moz-linear-gradient(top,  #258dc8 0%, #258dc8 100%); /* FF3.6-15 */
@@ -44,18 +58,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', end
 }
 
 .twoTab{
-  margin-left: 1em;
+  margin-left: 2em;
 }
+.threeTab{
+  margin-left: 3em;
+}
+
 .toolBar{
 	background-color: #EEEEE6;
 }
 
 .code{
-	padding: 1em;
-    height: 70%;
-    min-height: 100px;
-    max-height: 690px !important;
-    overflow-y: scroll;
+  	padding: 1em;
 }
 .reservedWords{
 
